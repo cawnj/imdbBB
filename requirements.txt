@@ -1,0 +1,6 @@
+argparse
+ffmpeg
+pymkv
+pyimgur
+pystreamable
+pyperclip
