@@ -9,8 +9,6 @@ def app(imdb, filename, mega, time, config):
 		imdb = input('IMDB ID:\n')
 	if filename is None:
 		filename = input('Video filename:\n')
-	else:
-		filename = '"' + filename + '"'
 	if mega is None:
 		mega = input('Mega link:\n')
 	samplegen.clear()
