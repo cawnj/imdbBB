@@ -4,10 +4,10 @@ import sys
 import pyperclip
 
 def generate_text(imdb_info, mediainfo, links, mega):
-    if imdb_info['Response']=='False':
-        sys.exit (imdb_info['Error'])
-    else:
-        out_text = f'''[imdb]{{
+	if imdb_info['Response']=='False':
+		sys.exit (imdb_info['Error'])
+	else:
+		out_text = f'''[imdb]{{
   "poster": "{imdb_info['Poster']}",
   "title": "{imdb_info['Title']}",
   "year": "{imdb_info['Year']}",
@@ -37,7 +37,7 @@ def generate_text(imdb_info, mediainfo, links, mega):
 [color=#0080FF][b]Direct Download Links[/b][/color]:
 [hide][b64]{mega}[/b64][/hide]
 Enjoy!'''
-        pyperclip.copy(out_text)
-        with open('out.txt', 'w') as f:
-            f.write(out_text)
-        print ('Success!\nText has been copied to clipboard and saved to "out.txt"')
+		pyperclip.copy(out_text)
+		with open('out.txt', 'w') as f:
+			f.write(out_text)
+		print ('Success!\nText has been copied to clipboard and saved to "out.txt"')
